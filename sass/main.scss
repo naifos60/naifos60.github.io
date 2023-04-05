@@ -1,0 +1,31 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons";
+@import "./components/card";
+
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/container";
+@import "./layout/form";
+
+
+@import "./pages/work";
+@import "./pages/about";
+@import "./pages/project";
+
+@import "../public/css/fontawesome/scss/fontawesome";
+
+@import "../public/css/fontawesome/scss/solid";
+@import "../public/css/fontawesome/scss/brands";
+@import "../public/css/fontawesome/scss/regular";
+@import "../public/css/fontawesome/scss/icons"
+
+
+
+

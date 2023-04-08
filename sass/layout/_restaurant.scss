@@ -1,0 +1,12 @@
+#restaurants{
+    padding: 0 14px;
+    & h2{
+        text-align: start;
+        margin-top: 54px;
+    }
+}
+.restaurant-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

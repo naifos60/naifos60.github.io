@@ -1,0 +1,41 @@
+.card{
+    width: 340px;
+    height: 251px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    margin-bottom: 18px;
+    & img{
+        width: 340px;
+        height: 174px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    &-content{
+        display: flex;
+        justify-content: flex-start;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 18px;
+        margin: 14px 0 5px 13px;
+    }
+    &-text{
+        font-weight: 300;
+        font-size: 17px;
+        margin: 0 0 0 13px;
+        text-align: start;
+    }
+    &-icone{
+        color: #101010;
+        width: 22px;
+        height: 21px;
+        font-size: 22px;
+        position: relative;
+        left: 135px;
+        top: 23px;
+        &-a-la-francaise{
+            position: relative;
+            left: 174px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.bannier{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      &__title{ 
+        margin: 35px auto 0;
+      }
+      &-content{
+        color: #353535;
+        font-size: 18px;
+        font-weight: 300;
+      }
+}

@@ -1,7 +1,6 @@
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
-  text-align: center;
   list-style: none;
   color: #000000;
 }
@@ -18,7 +17,9 @@ body {
 }
 
 .main-container {
-  width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .footer-title, h1 {
@@ -71,21 +72,24 @@ a {
 }
 
 .card {
-  width: 340px;
+  width: 100%;
   height: 251px;
   border-radius: 15px;
   background: #FFFFFF;
   margin-bottom: 18px;
 }
 .card img {
-  width: 340px;
+  width: 100%;
   height: 174px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  object-fit: cover;
 }
 .card-content {
   display: flex;
-  justify-content: flex-start;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .card-title {
   font-weight: 700;
@@ -103,13 +107,9 @@ a {
   width: 22px;
   height: 21px;
   font-size: 22px;
-  position: relative;
-  left: 135px;
+  position: absolute;
+  right: 33px;
   top: 23px;
-}
-.card-icone-a-la-francaise {
-  position: relative;
-  left: 174px;
 }
 
 /******** header ********/
@@ -169,6 +169,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .functioning {
@@ -177,10 +178,13 @@ a {
   align-items: flex-start;
   justify-content: center;
   margin: 0 auto;
-  width: 375px;
+  width: 100%;
   height: 440px;
   background: #FFFFFF;
   padding: 0 20px;
+}
+.functioning-stage {
+  width: 100%;
 }
 
 .stage {
@@ -188,7 +192,7 @@ a {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 322.49px;
+  width: 100%;
   height: 72.38px;
   margin-top: 24.93px;
   padding: 0;
@@ -305,6 +309,116 @@ a {
 .footer-icon {
   color: #FFFFFF;
   margin-right: 11px;
+}
+
+.main-menu {
+  height: 1080px;
+}
+
+.title-site {
+  position: relative;
+}
+.title-site i {
+  font-size: 18px;
+  color: #353535;
+  width: 17.2px;
+  height: 16px;
+  position: absolute;
+  top: 24px;
+  left: 23px;
+}
+
+.img-menu {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+.content-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 13px;
+  background: #F6F6F6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: absolute;
+  top: 280px;
+}
+.content-menu-title {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
+  margin-top: 19px;
+  margin-bottom: 28.72px;
+}
+.content-menu-icone {
+  font-size: 24px;
+  position: absolute;
+  top: 41px;
+  right: 41px;
+}
+
+.menu-entree, .menu-plat, .menu-dessert {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  font-weight: 300;
+  text-align: start;
+  margin-bottom: 40px;
+}
+.menu-entree-title, .menu-plat-title, .menu-dessert-title {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-underline-offset: 10px;
+}
+.menu-entree-title span, .menu-plat-title span, .menu-dessert-title span {
+  text-decoration: underline;
+  text-decoration-color: #99E2D0;
+}
+
+.choice {
+  position: relative;
+  width: 100%;
+  height: 69px;
+  background: #FFFFFF;
+  border-radius: 15.04px;
+  margin-top: 12px;
+  padding: 12px 13px 12px 15px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.choice-title {
+  margin: auto;
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+}
+.choice-content {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 15.04px;
+}
+.choice-price {
+  position: absolute;
+  right: 16px;
+  bottom: 0px;
+  font-weight: 700;
+  font-size: 15.04px;
+}
+
+.command-button {
+  width: 100%;
+  text-align: center;
+}
+.command-button-menu {
+  width: 186px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

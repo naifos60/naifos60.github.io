@@ -10,44 +10,80 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../asset/css/normalize.css">
         <link rel="stylesheet" href="../asset/css/style.css">
-        <script src="https://kit.fontawesome.com/4dc22cd92e.js" crossorigin="anonymous"></script>  
+        <script src="https://kit.fontawesome.com/4dc22cd92e.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="main-container">
             <header>
                 <div class="title-site">
                     <h1>ohmyfood</h1>
-                    <i class="fa-solid fa-arrow-left"></i>
+                    <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
                 </div>
-            </header>
-            <main>
-                <section class="img-menu">
-                    <div class="img-menu">
-                        <img src="../asset/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="card-img" alt="photo-d'asiette-gastronomique">
+                <div>
+                        <img src="../asset/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="img-menu" alt="photo-d'asiette-gastronomique">
                     </div>
-                </section>
+            </header>
+            <main class="main-menu">    
                 <section class="content-menu">
-                    <h1 class="restaurant-title">Le délice des sens</h1>
-                    <i class="fa-regular fa-heart menu-icone"></i>
+                    <h2 class="content-menu-title">Le délice des sens</h2>
+                    <i class="fa-regular fa-heart content-menu-icone"></i>
                     <div class="menu-entree">
-                        <h2>Entrées</h2>
-                        <div class="entree-1"></div>
-                        <div class="entree-2"></div>
-                        <div class="entree-3"></div>
+                        <h2 class="menu-entree-title"><span>Entr</span>ées</h2>
+                        <div class="choice">
+                            <h3 class="choice-title">Tartare de thon</h3>
+                            <p class="choice-content">Assaisonné au yuzu</p>
+                            <p class="choice-price">25€</p>
+                        </div>
+                        <div class="choice">
+                            <h3 class="choice-title">Bouchée de homard croustillant</h3>
+                            <p class="choice-content">Et sa farandole de petits légumes</p>
+                            <p class="choice-price">35€</p>
+                        </div>
+                        <div class="choice">
+                            <h3 class="choice-title">Poulet rôti aux herbes de Provence</h3>
+                            <p class="choice-content">Et sa crème de truffe</p>
+                            <p class="choice-price">40€</p>
+                        </div>
                     </div>
                     <div class="menu-plat">
-                        <h2>Plats</h2>
-                        <div class="plat-1"></div>
-                        <div class="plat-2"></div>
-                        <div class="plat-3"></div>
+                        <h2 class="menu-plat-title"><span>Plat</span>s</h2>
+                        <div class="choice">
+                            <h3 class="choice-title">Poulet rôti aux herbes de Provence</h3>
+                            <p class="choice-content">Et sa crème de truffe</p>
+                            <p class="choice-price">40€</p>
+                        </div>
+                        <div class="choice">
+                            <h3 class="choice-title">Langouste rôtie</h3>
+                            <p class="choice-content">Et ses légumes de saison</p>
+                            <p class="choice-price">35€</p>
+                        </div>
+                        <div class="choice">
+                            <h3 class="choice-title">Côte de boeuf Angus</h3>
+                            <p class="choice-content">Et sa purée de panais</p>
+                            <p class="choice-price">44€</p>
+                        </div>
                     </div>
-                    <div class="menu-entree">
-                        <h2>Desserts</h2>
-                        <div class="desert-1"></div>
-                        <div class="desert-2"></div>
-                        <div class="desert-3"></div>
-                        <button class="button button-menu" type="submit">Commander</button>
+                    <div class="menu-dessert">
+                        <h2 class="menu-dessert-title"><span>Dess</span>erts</h2>
+                        <div class="choice">
+                            <h3 class="choice-title">Oeuf au plat</h3>
+                            <p class="choice-content">Assaisonné à la truffe sur lit de caviar</p>
+                            <p class="choice-price">76€</p>
+                        </div>
+                        <div class="choice">
+                            <h3 class="choice-title">Crème brulée</h3>
+                            <p class="choice-content">Revisitée</p>
+                            <p class="choice-price">22€</p>
+                        </div>
+                        <div class="choice">
+                            <h3 class="choice-title">Tiramisu</h3>
+                            <p class="choice-content">À la noisette</p>
+                            <p class="choice-price">23€</p>
+                        </div>
                     </div>
+                        <div class="command-button">
+                        <button class="button command-button-menu" type="submit">Commander</button>
+                       </div>
                 </section>
             </main>
             <footer>
@@ -79,4 +115,6 @@
                     </ul>
                 </div>
             </footer>
+        </div>
     </body>
+</html>

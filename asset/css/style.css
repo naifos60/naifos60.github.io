@@ -314,6 +314,9 @@ a {
 .main-menu {
   height: 1080px;
 }
+.main-menu-note {
+  height: 1163px;
+}
 
 .title-site {
   position: relative;

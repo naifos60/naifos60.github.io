@@ -45,16 +45,30 @@
         margin: 0 0 0 13px;
         text-align: start;
     }
-    &-icone{
-        color: #101010;
-        width: 22px;
-        height: 21px;
+
+    &-icone button{
+        display: flex;
+        width: 25px;
+        height: 24px;
         font-size: 22px;
+        padding: 0;
+        border: none;
+        background: transparent;
         position: absolute;
-        right: 33px;
-        top: 23px;
-        &.fa-solid{
-            color: $cd-purple;
+        right: 25px;
+        bottom: 33px;
+
+        & i.fa-solid{
+        -webkit-background-clip: text!important;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: thin;
+        position: relative;
+        color: #101010;
+        background: transparent;
+            &:hover{
+                @include background-button  
+                }    
+            }
         }
     }
-}
+

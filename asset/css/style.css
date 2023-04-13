@@ -59,6 +59,7 @@ a {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   filter: brightness(1);
   transition: all 600ms;
+  cursor: pointer;
 }
 .button-bannier {
   width: 218px;
@@ -119,17 +120,28 @@ a {
   margin: 0 0 0 13px;
   text-align: start;
 }
-.card-icone {
-  color: #101010;
-  width: 22px;
-  height: 21px;
+.card-icone button {
+  display: flex;
+  width: 25px;
+  height: 24px;
   font-size: 22px;
+  padding: 0;
+  border: none;
+  background: transparent;
   position: absolute;
-  right: 33px;
-  top: 23px;
+  right: 25px;
+  bottom: 33px;
 }
-.card-icone.fa-solid {
-  color: #9356DC;
+.card-icone button i.fa-solid {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: thin;
+  position: relative;
+  color: #101010;
+  background: transparent;
+}
+.card-icone button i.fa-solid:hover {
+  background: linear-Gradient(#9356DC 0%, #FF79DA 100%);
 }
 
 /******** header ********/
@@ -219,6 +231,9 @@ a {
   background-color: #F6F6F6;
   border-radius: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.stage:hover {
+  background-color: #beffed;
 }
 .stage-content {
   font-weight: 500;
@@ -323,19 +338,15 @@ a {
   color: #FFFFFF;
   margin: 0;
 }
+.footer-text:hover {
+  color: #9356DC;
+}
 .footer-text-mention, .footer-text-contact {
   font-weight: 400;
 }
 .footer-icon {
   color: #FFFFFF;
   margin-right: 11px;
-}
-
-.main-menu {
-  height: 1080px;
-}
-.main-menu-note {
-  height: 1163px;
 }
 
 .title-site {
@@ -355,6 +366,7 @@ a {
   width: 100%;
   height: 275px;
   object-fit: cover;
+  z-index: 1;
 }
 
 .content-menu {
@@ -366,22 +378,41 @@ a {
   background: #F6F6F6;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  position: absolute;
-  top: 280px;
+  position: relative;
+  margin-top: -65px;
+  z-index: 2;
 }
 .content-menu-title {
   font-family: "Shrikhand";
   font-weight: 400;
-  font-style: italic;
   font-size: 28px;
   margin-top: 19px;
   margin-bottom: 28.72px;
 }
-.content-menu-icone {
+.content-menu-icone button {
   font-size: 24px;
   position: absolute;
-  top: 41px;
+  top: 35px;
   right: 41px;
+  display: flex;
+  width: 25px;
+  height: 24px;
+  font-size: 22px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  position: absolute;
+}
+.content-menu-icone button i.fa-solid {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: thin;
+  position: relative;
+  color: #101010;
+  background: transparent;
+}
+.content-menu-icone button i.fa-solid:hover {
+  background: linear-Gradient(#9356DC 0%, #FF79DA 100%);
 }
 
 .menu-entree, .menu-plat, .menu-dessert {
@@ -404,33 +435,95 @@ a {
   text-decoration-color: #99E2D0;
 }
 
+.container_restaurant {
+  padding: 12px 18px 12px 10px;
+  width: 100%;
+}
+
+.selected-choice {
+  width: 60px;
+  background-color: #99E2D0;
+  height: 69px;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  align-items: center;
+  font-size: 31px;
+  padding-left: 15px;
+}
+.selected-choice i {
+  color: #008766;
+  background: #FFFFFF;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+}
+
 .choice {
-  position: relative;
   width: 100%;
   height: 69px;
   background: #FFFFFF;
   border-radius: 15.04px;
-  margin-top: 12px;
-  padding: 12px 13px 12px 15px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  gap: 55px;
+  overflow: hidden;
+}
+.choice:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.choice:hover .choice-2 {
+  transform: translateX(-60px);
+  transition: transform 0.8s ease-in-out;
+}
+.choice-1 {
+  display: flex;
+  overflow: hidden;
+}
+.choice-2 {
+  display: flex;
+  gap: 10px;
+}
+.choice .choice-2 {
+  margin-right: -60px;
+}
+.choice:not(:hover) .choice-2 {
+  transform: translateX(0);
+  transition: transform 0.8s ease-in-out;
 }
 .choice-title {
-  margin: auto;
-  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   font-weight: 500;
   font-size: 18px;
+  margin: 0;
 }
 .choice-content {
   margin-top: 5px;
-  margin-bottom: 0;
+  font-weight: 300;
   font-size: 15.04px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .choice-price {
-  position: absolute;
-  right: 16px;
-  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+  font-size: 15px;
   font-weight: 700;
-  font-size: 15.04px;
+  color: #353535;
+}
+.choice:hover > .selected-choice {
+  transform: scaleX(1);
+  opacity: 1;
 }
 
 .command-button {
@@ -442,6 +535,16 @@ a {
   height: 50px;
   font-weight: 500;
   font-size: 16px;
+}
+
+.footer_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 22px 0 22px 25px;
+  background: #353535;
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

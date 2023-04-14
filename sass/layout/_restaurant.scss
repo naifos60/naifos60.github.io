@@ -11,3 +11,16 @@
     align-items: center;
     width: 100%;
 }
+/********* Media Queries *******/
+@media (min-width: 1024px) {
+    #restaurants{
+    padding-left: 180px;
+    height: 668px;
+}
+.restaurant-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+}
+

@@ -71,4 +71,18 @@
             }
         }
     }
+    /************* Media Queries *********/
+    @media (min-width: 1024px) {
+        .card{
+            display: flex;
+            flex-direction: row;
+            width: 41%;
+            margin-right: 7%;
+            margin-bottom: 50px;
+            & a{
+                width: 100%;
+            }
+        }
+        
+    }
 

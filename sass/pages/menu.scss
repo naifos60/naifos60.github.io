@@ -216,18 +216,21 @@
 @media (min-width: 1024px) {
     .main-container{
         background: #FFFFFF;
-        & img{
-            height: 425px;
-        }
+    }
+    .img-menu{
+        height: 475px;
     }
     .content-menu{
         display: flex;
         align-items: center;
         width: 73.26%;
         margin: 0 auto;
-        margin-top: -20px;
+        margin-top: -46px;
         padding-left: 16.38%;
         padding-right: 20%;
+        &-title{
+            margin-top: 51px;
+        }
         &-icone button{
             position: relative;
             top: -57px;

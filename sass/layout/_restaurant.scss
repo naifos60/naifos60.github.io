@@ -12,6 +12,21 @@
     width: 100%;
 }
 /********* Media Queries *******/
+@media (min-width: 768px) and (max-width: 1023px) {
+    #restaurants{
+        margin: 55px 0px 45px 40px;
+    }
+    .restaurant-card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        & .card{
+            flex: 40%;
+            margin-right: 5%;
+        }
+    }
+    
+}
 @media (min-width: 1024px) {
     #restaurants{
     padding-left: 180px;

@@ -213,6 +213,26 @@
 }
 
 /******** Media Queries ********/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main-container{
+        background: #FFFFFF;
+    }
+    .main-menu{
+        margin: -28px 110px 0;
+    }
+    .content-menu{
+        margin: 0;
+        padding: 40px 60px 0;
+        display: flex;
+        align-items: center;
+        &-icone button{
+            position: relative;
+            top: -57px;
+            right: -175px;
+        }
+    }
+    
+}
 @media (min-width: 1024px) {
     .main-container{
         background: #FFFFFF;

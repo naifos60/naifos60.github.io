@@ -160,9 +160,8 @@ a {
   -webkit-text-stroke: thin;
   color: transparent;
   opacity: 1;
-  line-height: 1;
   cursor: pointer;
-  transition: all 0.5s ease-in 0.3s;
+  transition: all 0.5s ease-in-out 0.3s;
 }
 
 /************* Media Queries *********/
@@ -567,7 +566,7 @@ a {
   color: transparent;
   opacity: 1;
   cursor: pointer;
-  transition: all 0.5s ease-in 0.3s;
+  transition: all 0.5s ease-in-out 0.3s;
 }
 
 .menu-entree, .menu-plat, .menu-dessert {

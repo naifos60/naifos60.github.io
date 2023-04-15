@@ -1,0 +1,36 @@
+.loader{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $cd-green-item;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    animation: loading 3S linear 0s 1 normal forwards running;
+}
+.loading{
+    font-size: 25px;
+    & span{
+        display: inline-block;
+        animation: pulse 0.5s reverse infinite;
+        padding-left: 15px;
+        &:nth-child(1){
+            animation-delay: 0.1s;
+            color: #008766;
+        }
+        &:nth-child(2){
+            animation-delay: 0.2s;
+            color: #FFF;
+        }
+        &:nth-child(3){
+            animation-delay: 0.3s;
+            color: #008766;
+        }
+        &:nth-child(4){
+            animation-delay: 0.4s;
+            color: #FFF;
+        }
+    }
+}

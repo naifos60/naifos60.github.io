@@ -69,10 +69,19 @@
         -webkit-text-stroke: thin;
         position: relative;
         color: #101010;
-        background: transparent;
+        background-image: transparent;
+        opacity: 0.6;
+        transform-origin: 50% 50%;
             &:hover{
-                @include background-button  
-                }    
+                background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+                -webkit-background-clip: text!important;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke: thin;
+                color: transparent;
+                opacity: 1;
+                cursor: pointer;
+                transition: all 0.5s ease-in 0.3s;
+            }    
             }
         }
     }

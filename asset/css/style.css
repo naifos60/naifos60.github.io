@@ -262,7 +262,7 @@ a {
 }
 
 /********* Media Queries *******/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
   #restaurants {
     margin: 55px 0px 45px 40px;
   }
@@ -279,7 +279,9 @@ a {
 @media (min-width: 1024px) {
   #restaurants {
     padding-left: 180px;
+    padding-right: 60px;
     height: 668px;
+    margin-left: 0;
   }
   .restaurant-card {
     display: flex;
@@ -376,7 +378,7 @@ a {
 }
 
 /********* media Query *******/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
   .functioning {
     padding: 20px 40px 70px;
     height: auto;

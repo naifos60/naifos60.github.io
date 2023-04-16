@@ -704,7 +704,7 @@ a {
 }
 
 /******** Media Queries ********/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
   .main-container {
     background: #FFFFFF;
   }
@@ -713,7 +713,7 @@ a {
   }
   .content-menu {
     margin: 0;
-    padding: 40px 60px 0;
+    padding: 40px 60px;
     display: flex;
     align-items: center;
   }
@@ -738,6 +738,7 @@ a {
     margin-top: -46px;
     padding-left: 16.38%;
     padding-right: 20%;
+    padding-bottom: 40px;
   }
   .content-menu-title {
     margin-top: 51px;

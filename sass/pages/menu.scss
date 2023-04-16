@@ -2,6 +2,7 @@
 @import "../utils/functions";
 @import "../utils/mixins";
 @import "../utils/extensions";
+@import "../utils/keyframes";
 
 @import "../base/base";
 @import "../base/typography";
@@ -107,6 +108,18 @@
             text-decoration-color: $cd-green-item;
         }
     }
+}
+.menu-entree{
+    transform-origin: 0% 50%;
+    animation: menuwelcome 0.5s ease-in-out 0.2s 1 backwards running;
+}
+.menu-plat{
+    transform-origin: 0% 50%;
+    animation: menuwelcome 0.5s ease-in-out 0.7s 1 backwards running;
+}
+.menu-dessert{
+    transform-origin: 0% 50%;
+    animation: menuwelcome 0.5s ease-in-out 1.2s 1 backwards running;
 }
 .container_restaurant{
     padding: 12px 18px 12px 10px;

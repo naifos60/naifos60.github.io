@@ -1,3 +1,34 @@
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+  0%, 25%, 50%, 95% {
+    z-index: 1;
+  }
+}
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.6);
+  }
+}
+@keyframes menuwelcome {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -239,7 +270,7 @@ a {
 }
 
 /********* Media Queries *******/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
   #restaurants {
     margin: 55px 0px 45px 40px;
   }
@@ -256,7 +287,9 @@ a {
 @media (min-width: 1024px) {
   #restaurants {
     padding-left: 180px;
+    padding-right: 60px;
     height: 668px;
+    margin-left: 0;
   }
   .restaurant-card {
     display: flex;
@@ -353,7 +386,7 @@ a {
 }
 
 /********* media Query *******/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
   .functioning {
     padding: 20px 40px 70px;
     height: auto;
@@ -588,6 +621,21 @@ a {
 .menu-entree-title span, .menu-plat-title span, .menu-dessert-title span {
   text-decoration: underline;
   text-decoration-color: #99E2D0;
+}
+
+.menu-entree {
+  transform-origin: 0% 50%;
+  animation: menuwelcome 0.5s ease-in-out 0.2s 1 backwards running;
+}
+
+.menu-plat {
+  transform-origin: 0% 50%;
+  animation: menuwelcome 0.5s ease-in-out 0.7s 1 backwards running;
+}
+
+.menu-dessert {
+  transform-origin: 0% 50%;
+  animation: menuwelcome 0.5s ease-in-out 1.2s 1 backwards running;
 }
 
 .container_restaurant {

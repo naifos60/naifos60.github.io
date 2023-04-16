@@ -172,7 +172,7 @@ a {
   -webkit-text-stroke: thin;
   position: relative;
   color: #101010;
-  background-image: transparent;
+  background: transparent;
   opacity: 0.6;
   transform-origin: 50% 50%;
 }
@@ -314,6 +314,7 @@ a {
   background-color: #F6F6F6;
   border-radius: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .stage:hover {
   background-color: #beffed;

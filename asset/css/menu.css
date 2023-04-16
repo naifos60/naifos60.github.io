@@ -103,12 +103,7 @@ a {
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.25);
 }
 
-/*********** Media Queries ***********/
-@media (min-width: 1024px) {
-  .button-bannier {
-    margin-bottom: 30px;
-  }
-}
+
 .card {
   position: relative;
   width: 100%;
@@ -195,19 +190,7 @@ a {
   transition: all 0.5s ease-in-out 0.3s;
 }
 
-/************* Media Queries *********/
-@media (min-width: 1024px) {
-  .card {
-    display: flex;
-    flex-direction: row;
-    width: 41%;
-    margin-right: 7%;
-    margin-bottom: 50px;
-  }
-  .card a {
-    width: 100%;
-  }
-}
+
 /******** header ********/
 .title-site {
   width: 100%;
@@ -269,34 +252,7 @@ a {
   width: 100%;
 }
 
-/********* Media Queries *******/
-@media (min-width: 768px) {
-  #restaurants {
-    margin: 55px 0px 45px 40px;
-  }
-  .restaurant-card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .restaurant-card .card {
-    flex: 40%;
-    margin-right: 5%;
-  }
-}
-@media (min-width: 1024px) {
-  #restaurants {
-    padding-left: 180px;
-    padding-right: 60px;
-    height: 668px;
-    margin-left: 0;
-  }
-  .restaurant-card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
+
 .functioning {
   display: flex;
   flex-direction: column;
@@ -385,50 +341,7 @@ a {
   left: -10px;
 }
 
-/********* media Query *******/
-@media (min-width: 768px) {
-  .functioning {
-    padding: 20px 40px 70px;
-    height: auto;
-  }
-  .functioning-stage ul {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  .functioning-stage ul .stage {
-    padding: 0 50px 0 0;
-  }
-}
-@media (min-width: 1024px) {
-  .functioning {
-    padding-left: 180px;
-    height: 228.38px;
-  }
-  .functioning h2 {
-    margin-top: 50px;
-    margin-bottom: 0;
-  }
-  .functioning ul {
-    margin: 0;
-  }
-  .functioning-stage {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .functioning-stage .stage {
-    margin-bottom: 50px;
-  }
-  .functioning-stage ul {
-    width: 93%;
-    display: flex;
-    flex-direction: row;
-    gap: 36.51px;
-  }
-}
+
 .bannier {
   display: flex;
   flex-direction: column;
@@ -444,12 +357,7 @@ a {
   font-weight: 300;
 }
 
-/************ Media Queries ************/
-@media (min-width: 1024px) {
-  .bannier__title {
-    font-size: 40px;
-  }
-}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -493,43 +401,7 @@ a {
   margin-right: 11px;
 }
 
-/********** Media Queries **********/
-@media (min-width: 768px) and (max-width: 1023px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 50px;
-  }
-  .footer-content {
-    display: flex;
-    align-items: center;
-    gap: 45px;
-  }
-}
-@media (min-width: 1024px) {
-  .footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: end;
-    margin-top: -20px;
-  }
-  .footer-title {
-    margin-left: 90px;
-    margin-right: 30px;
-    margin-top: -7px;
-  }
-  .footer-content {
-    display: flex;
-    flex-direction: row;
-  }
-  .footer-list {
-    margin-left: 15px;
-  }
-  .footer-text-mention {
-    margin-left: 42px;
-  }
-}
+
 .title-site {
   position: relative;
 }
@@ -750,8 +622,8 @@ a {
   background: #353535;
   margin-top: 0;
 }
-
-/******** Media Queries ********/
+/************** Media Queries ***********/
+/******** Media Queries menu ********/
 @media (min-width: 768px) {
   .main-container {
     background: #FFFFFF;
@@ -817,4 +689,138 @@ a {
   }
 }
 
+/*********** Media Queries button ***********/
+@media (min-width: 1024px) {
+  .button-bannier {
+    margin-bottom: 30px;
+  }
+}
+/************* Media Queries card *********/
+@media (min-width: 1024px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 41%;
+    margin-right: 7%;
+    margin-bottom: 50px;
+  }
+  .card a {
+    width: 100%;
+  }
+}
+/********* Media Queries restaurants *******/
+@media (min-width: 768px) {
+  #restaurants {
+    margin: 55px 0px 45px 40px;
+  }
+  .restaurant-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurant-card .card {
+    flex: 40%;
+    margin-right: 5%;
+  }
+}
+@media (min-width: 1024px) {
+  #restaurants {
+    padding-left: 180px;
+    padding-right: 60px;
+    height: 668px;
+    margin-left: 0;
+  }
+  .restaurant-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+/********* media Query functionning *******/
+@media (min-width: 768px) {
+  .functioning {
+    padding: 20px 40px 70px;
+    height: auto;
+  }
+  .functioning-stage ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .functioning-stage ul .stage {
+    padding: 0 50px 0 0;
+  }
+}
+@media (min-width: 1024px) {
+  .functioning {
+    padding-left: 180px;
+    height: 228.38px;
+  }
+  .functioning h2 {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .functioning ul {
+    margin: 0;
+  }
+  .functioning-stage {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .functioning-stage .stage {
+    margin-bottom: 50px;
+  }
+  .functioning-stage ul {
+    width: 93%;
+    display: flex;
+    flex-direction: row;
+    gap: 36.51px;
+  }
+}
+/************ Media Queries bannier ************/
+@media (min-width: 1024px) {
+  .bannier__title {
+    font-size: 40px;
+  }
+}
+/********** Media Queries footer **********/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+  }
+  .footer-content {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    margin-top: -20px;
+  }
+  .footer-title {
+    margin-left: 90px;
+    margin-right: 30px;
+    margin-top: -7px;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-list {
+    margin-left: 15px;
+  }
+  .footer-text-mention {
+    margin-left: 42px;
+  }
+}
 /*# sourceMappingURL=menu.css.map */
